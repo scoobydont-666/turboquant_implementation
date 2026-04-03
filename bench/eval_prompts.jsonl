@@ -1,0 +1,45 @@
+{"id": "reason-01", "category": "reasoning", "prompt": "A farmer has 17 sheep. All but 9 die. How many sheep are left?", "expected_pattern": "9"}
+{"id": "reason-02", "category": "reasoning", "prompt": "If you have a bowl with six apples and you take away four, how many do you have?", "expected_pattern": "4"}
+{"id": "reason-03", "category": "reasoning", "prompt": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost?", "expected_pattern": "0.05"}
+{"id": "reason-04", "category": "reasoning", "prompt": "If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?", "expected_pattern": "5 minutes"}
+{"id": "reason-05", "category": "reasoning", "prompt": "In a race you pass the person in 2nd place. What place are you now in?", "expected_pattern": "2nd"}
+{"id": "reason-06", "category": "reasoning", "prompt": "There are three switches outside a room. One controls a light bulb inside. You can only enter once. How do you figure out which switch controls the bulb?", "expected_pattern": "heat|warm|touch"}
+{"id": "reason-07", "category": "reasoning", "prompt": "What is the next number in this sequence: 1, 1, 2, 3, 5, 8, 13, ?", "expected_pattern": "21"}
+{"id": "reason-08", "category": "reasoning", "prompt": "How many times can you subtract 5 from 25?", "expected_pattern": "once|1 time|one time|5 times"}
+{"id": "reason-09", "category": "reasoning", "prompt": "If two's company and three's a crowd, what are four and five?", "expected_pattern": "9|nine"}
+{"id": "reason-10", "category": "reasoning", "prompt": "A doctor gives you 3 pills and tells you to take one every half hour. How long will the pills last?", "expected_pattern": "1 hour|one hour|60 min"}
+{"id": "code-01", "category": "code", "prompt": "Write a Python function that checks if a string is a palindrome. Return True or False.", "expected_pattern": "def.*palindrome|reversed|\\[::-1\\]"}
+{"id": "code-02", "category": "code", "prompt": "Write a Python function to find the greatest common divisor (GCD) of two numbers using Euclid's algorithm.", "expected_pattern": "def.*gcd|while|%|mod"}
+{"id": "code-03", "category": "code", "prompt": "Write a Python function that flattens a nested list of arbitrary depth.", "expected_pattern": "def.*flatten|isinstance.*list|yield|extend"}
+{"id": "code-04", "category": "code", "prompt": "Write a Python function to check if a number is prime.", "expected_pattern": "def.*prime|for.*range|%.*==.*0"}
+{"id": "code-05", "category": "code", "prompt": "Write a SQL query to find the second highest salary from an employees table.", "expected_pattern": "SELECT|MAX|LIMIT|OFFSET|DENSE_RANK|ROW_NUMBER"}
+{"id": "code-06", "category": "code", "prompt": "Write a Python function that implements binary search on a sorted array.", "expected_pattern": "def.*binary|low|high|mid|while"}
+{"id": "code-07", "category": "code", "prompt": "Write a Python function to merge two sorted lists into one sorted list.", "expected_pattern": "def.*merge|while|append|sorted"}
+{"id": "code-08", "category": "code", "prompt": "Write a Python class implementing a stack with push, pop, and peek methods.", "expected_pattern": "class.*Stack|push|pop|peek"}
+{"id": "code-09", "category": "code", "prompt": "Write a Bash one-liner to find all .py files modified in the last 24 hours.", "expected_pattern": "find.*-name.*\\.py.*-mtime|-newer|mmin"}
+{"id": "code-10", "category": "code", "prompt": "Write a Python function that converts a Roman numeral string to an integer.", "expected_pattern": "def.*roman|IV|IX|XL|dict|map"}
+{"id": "fact-01", "category": "factual", "prompt": "What is the capital of Australia?", "expected_pattern": "Canberra"}
+{"id": "fact-02", "category": "factual", "prompt": "What year did the Berlin Wall fall?", "expected_pattern": "1989"}
+{"id": "fact-03", "category": "factual", "prompt": "What is the chemical symbol for gold?", "expected_pattern": "Au"}
+{"id": "fact-04", "category": "factual", "prompt": "Who wrote 'The Great Gatsby'?", "expected_pattern": "Fitzgerald|F\\. Scott"}
+{"id": "fact-05", "category": "factual", "prompt": "What is the speed of light in meters per second (approximate)?", "expected_pattern": "3.*10\\^?8|300.*000.*km|299"}
+{"id": "fact-06", "category": "factual", "prompt": "What is the largest planet in our solar system?", "expected_pattern": "Jupiter"}
+{"id": "fact-07", "category": "factual", "prompt": "What programming language was created by Guido van Rossum?", "expected_pattern": "Python"}
+{"id": "fact-08", "category": "factual", "prompt": "What is the boiling point of water in Celsius at sea level?", "expected_pattern": "100"}
+{"id": "fact-09", "category": "factual", "prompt": "What company created the Kubernetes container orchestration platform?", "expected_pattern": "Google"}
+{"id": "fact-10", "category": "factual", "prompt": "What does the acronym REST stand for in web APIs?", "expected_pattern": "Representational State Transfer"}
+{"id": "tax-01", "category": "domain", "prompt": "What is the standard deduction for a single filer in 2024?", "expected_pattern": "14[,.]?600|14600"}
+{"id": "tax-02", "category": "domain", "prompt": "What is the maximum contribution to a 401(k) for someone under 50 in 2024?", "expected_pattern": "23[,.]?000|23000"}
+{"id": "tax-03", "category": "domain", "prompt": "What IRS form is used to report capital gains and losses?", "expected_pattern": "Schedule D|8949|Form 8949"}
+{"id": "tax-04", "category": "domain", "prompt": "What is the penalty rate for early withdrawal from a traditional IRA before age 59.5?", "expected_pattern": "10%|10 percent"}
+{"id": "tax-05", "category": "domain", "prompt": "What is the self-employment tax rate for Social Security and Medicare combined?", "expected_pattern": "15\\.3|15.3%"}
+{"id": "k8s-01", "category": "domain", "prompt": "What Kubernetes resource type ensures a pod runs on every node in the cluster?", "expected_pattern": "DaemonSet"}
+{"id": "k8s-02", "category": "domain", "prompt": "What command shows all pods in all namespaces in Kubernetes?", "expected_pattern": "kubectl get pods.*-A|--all-namespaces"}
+{"id": "k8s-03", "category": "domain", "prompt": "What is the default port for the Kubernetes API server?", "expected_pattern": "6443"}
+{"id": "k8s-04", "category": "domain", "prompt": "What Kubernetes object manages stateful applications with stable network identities?", "expected_pattern": "StatefulSet"}
+{"id": "k8s-05", "category": "domain", "prompt": "What is a Kubernetes PersistentVolumeClaim (PVC) used for?", "expected_pattern": "storage|volume|disk|persist"}
+{"id": "long-01", "category": "long_context", "prompt": "Summarize the key differences between TCP and UDP protocols in exactly 3 bullet points.", "expected_pattern": "connection|reliable|ordered|fast|datagram"}
+{"id": "long-02", "category": "long_context", "prompt": "Explain the CAP theorem in distributed systems. Give a real-world example for each pair (CA, CP, AP).", "expected_pattern": "consistency|availability|partition|tolerance"}
+{"id": "long-03", "category": "long_context", "prompt": "Compare and contrast Docker containers versus virtual machines. Include at least 5 differences.", "expected_pattern": "kernel|overhead|isolation|boot|image|layer"}
+{"id": "long-04", "category": "long_context", "prompt": "Explain how garbage collection works in Python. Cover reference counting and the generational collector.", "expected_pattern": "reference count|cycle|generation|gc|collect"}
+{"id": "long-05", "category": "long_context", "prompt": "Describe the SOLID principles in object-oriented design with a one-sentence example for each.", "expected_pattern": "single responsibility|open.*closed|liskov|interface segregation|dependency inversion"}
