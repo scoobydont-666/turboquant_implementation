@@ -79,10 +79,12 @@ def generate(host: str, model: str, prompt: str, num_predict: int = 256) -> dict
                 if not line:
                     continue
                 data = json.loads(line)
-                if data.get("response"):
+                # Capture both response and thinking tokens (Qwen3 uses thinking field)
+                token_text = data.get("response") or data.get("thinking") or ""
+                if token_text:
                     if first_token_time is None:
                         first_token_time = time.time()
-                    response_text += data["response"]
+                    response_text += token_text
                     tokens += 1
                 if data.get("done"):
                     break
